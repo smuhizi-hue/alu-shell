@@ -1,0 +1,1 @@
+Corrected spelling to readme
