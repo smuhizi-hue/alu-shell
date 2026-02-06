@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-groups
+#!/bin/bash
+chgrp
