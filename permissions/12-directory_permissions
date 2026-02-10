@@ -1,3 +1,2 @@
 #!/bin/bash
-# This script creates a directory named my_dir with permissions 751
 mkdir -m 751 my_dir
