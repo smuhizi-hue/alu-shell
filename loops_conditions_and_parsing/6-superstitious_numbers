@@ -1,4 +1,5 @@
-#!/usr/bi /bash
+#!/usr/bin/env bash
+#the comment
 i=1
 while [ \$i -le 20 ]; do
   case \$i in
