@@ -1,20 +1,15 @@
 #!/usr/bin/env bash
 #the comment
 i=1
-while [ \$i -le 20 ]; do
-  case \$i in
-    4)
-      echo "\$i and then bad luck from China"
-      ;;
-    9)
-      echo "\$i and then bad luck from Japan"
-      ;;
-    17)
-      echo "\$i and then bad luck from Italy"
-      ;;
-    *)
-      echo "\$i"
-      ;;
-  esac
+while [ "$i" -le 20 ]; do
+  if [ "$i" -eq 4 ]; then
+    echo "bad luck from China"
+  elif [ "$i" -eq 9 ]; then
+    echo "bad luck from Japan"
+  elif [ "$i" -eq 17 ]; then
+    echo "bad luck from Italy"
+  else
+    echo "$i"
+  fi
   i=$((i + 1))
 done
