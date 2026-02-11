@@ -1,4 +1,4 @@
-#!/usr/bin /env bash
+#!/usr/bin/env bash
 # Display formatted information from /etc/passwd using while + IFS
 
 while IFS=':' read -r username password uid gid info home shell; do
