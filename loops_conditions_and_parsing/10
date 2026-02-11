@@ -16,4 +16,4 @@ while [ "$i" -le 20 ]; do
       ;;
   esac
   i=$((i + 1))
-donei
+done
