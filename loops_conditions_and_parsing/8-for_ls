@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# Iterate over all non-hidden files in the current directory
+# the comment
 for file in *; do
-    # Check if the file name contains at least one dash
-    if [[ "$file" == *-* ]]; then
-        # Use shell parameter expansion to remove the shortest match of '*-' from the front
-        echo "${file#*-}"
-    fi
+  echo "${file#*-}"
 done
