@@ -1,10 +1,15 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash
 #comment
-for pid in /proc/[0-9]*; do 
- if [ -r "$pid/com"];then
-    name=$(cat "$pid /comm") 
-    if [[ "$name" == *bash* ]]; then
-        echo "$(basename "$pid)
-     fi
+i=1
+while [ "$i" -le 20 ]; do
+  if [ "$i" -eq 4 ]; then
+    echo "bad luck from China"
+  elif [ "$i" -eq 9 ]; then
+    echo "bad luck from Japan"
+  elif [ "$i" -eq 17 ]; then
+    echo "bad luck from Italy"
+  else
+    echo "$i"
   fi
+  i=$((i+1))
 done
