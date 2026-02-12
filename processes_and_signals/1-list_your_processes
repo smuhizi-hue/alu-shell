@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 # The  script  displays a list of currently running processes.
 
-# -e: Select all processes
-# -f: Do a full-format listing (user-oriented)
-# --forest: Show ASCII art process tree (hierarchy)
-ps-ef--forest
+ps auxf
