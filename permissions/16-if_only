@@ -1,0 +1,9 @@
+#!/bin/bash
+# Get the owner of the file 'hello' and store it in a variable
+owner=$(ls -l hello | awk '{print $3}')
+
+# Check if the owner is 'guillaume'
+if [ "$owner" = "guillaume" ]; then
+    # If true, change the owner to 'vincent'
+    chown vincent hello
+fi
